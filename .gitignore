@@ -1,0 +1,10 @@
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+.DS_Store
+/coverage
