@@ -12,87 +12,87 @@ export class FindHoroscope{
     private getZodiacByDate(birthDate:Date):string{
         switch(birthDate.getMonth()){
             case 0:{
-                if(birthDate.getUTCDate() <= 19){
-                    return Zodiac.OGLAK;
+                if(birthDate.getUTCDate() <= 20){
+                    return Zodiac.CAPRICORNUS;
                 }else {
-                    return Zodiac.KOVA;
+                    return Zodiac.AQUARIUS;
                 }
             }
             case 1:{
-                if(birthDate.getUTCDate() <= 18){
-                    return Zodiac.KOVA;
+                if(birthDate.getUTCDate() <= 19){
+                    return Zodiac.AQUARIUS;
                 }else{
-                    return Zodiac.BALIK;
+                    return Zodiac.PISCES;
                 }
             }
             case 2:{
                 if(birthDate.getUTCDate() <= 20){
-                    return Zodiac.BALIK;
+                    return Zodiac.PISCES;
                 }else{
-                    return Zodiac.KOC
+                    return Zodiac.ARIES
                 }
             }
             case 3:{
-                if(birthDate.getUTCDate() <= 19){
-                    return Zodiac.KOC;
+                if(birthDate.getUTCDate() <= 20){
+                    return Zodiac.ARIES;
                 }else{
-                    return Zodiac.BOGA;
+                    return Zodiac.TAURUS;
                 }
             }
             case 4:{
-                if(birthDate.getUTCDate() <= 20){
-                    return Zodiac.BOGA;
+                if(birthDate.getUTCDate() <= 21){
+                    return Zodiac.TAURUS;
                 }else{
-                    return Zodiac.IKIZLER;
+                    return Zodiac.GEMINI;
                 }
             }
             case 5:{
                 if(birthDate.getUTCDate() <= 21){
-                    return Zodiac.IKIZLER;
+                    return Zodiac.GEMINI;
                 }else{
-                    return Zodiac.YENGEC;
+                    return Zodiac.CANCER;
                 }
             }
             case 6:{
-                if(birthDate.getUTCDate() <= 22){
-                    return Zodiac.YENGEC;
+                if(birthDate.getUTCDate() <= 23){
+                    return Zodiac.CANCER;
                 }else{
-                    return Zodiac.ASLAN
+                    return Zodiac.LEO
                 }
             }
             case 7:{
-                if(birthDate.getUTCDate() <= 22){
-                    return Zodiac.ASLAN;
+                if(birthDate.getUTCDate() <= 21){
+                    return Zodiac.LEO;
                 }else{
-                    return Zodiac.BASAK;
+                    return Zodiac.VIRGO;
                 }
             }
             case 8:{
-                if(birthDate.getUTCDate() <= 22){
-                    return Zodiac.BASAK;
+                if(birthDate.getUTCDate() <= 23){
+                    return Zodiac.VIRGO;
                 }else{
-                    return Zodiac.TERAZI;
+                    return Zodiac.LIBRA;
                 }
             }
             case 9:{
                 if(birthDate.getUTCDate() <= 23){
-                    return Zodiac.TERAZI;
+                    return Zodiac.LIBRA;
                 }else{
-                    return Zodiac.AKREP;
+                    return Zodiac.SCORPIO;
                 }
             }
             case 10:{
-                if(birthDate.getUTCDate() <= 21){
-                    return Zodiac.AKREP;
+                if(birthDate.getUTCDate() <= 23){
+                    return Zodiac.SCORPIO;
                 }else{
-                    return Zodiac.YAY;
+                    return Zodiac.SAGITTARIUS;
                 }
             }
             case 11:{
-                if(birthDate.getUTCDate() <= 21){
-                    return Zodiac.YAY;
+                if(birthDate.getUTCDate() <= 22){
+                    return Zodiac.SAGITTARIUS;
                 }else{
-                    return Zodiac.OGLAK;
+                    return Zodiac.CAPRICORNUS;
                 }
             }
             default: { 
@@ -103,7 +103,7 @@ export class FindHoroscope{
     }
 
     private getZodiacByLang(zodiac:Zodiac, lang:string):string{
-
+        return "";
     }
 
 }
