@@ -1,14 +1,14 @@
 export class Zodiac{
-    public static readonly KOC = "Koç";
-    public static readonly BOGA = "Boğa";
-    public static readonly IKIZLER = "İkizler";
-    public static readonly YENGEC = "Yengeç";
-    public static readonly ASLAN = "Aslan";
-    public static readonly BASAK = "Başak";
-    public static readonly TERAZI = "Terazi";
-    public static readonly AKREP = "Akrep";
-    public static readonly YAY = "Yay";
-    public static readonly OGLAK = "Oğlak";
-    public static readonly KOVA = "Kova";
-    public static readonly BALIK = "Balık";
+    public static readonly ARIES = "Aries";
+    public static readonly TAURUS = "Taurus";
+    public static readonly GEMINI = "Gemini";
+    public static readonly CANCER = "Cancer";
+    public static readonly LEO = "Leo";
+    public static readonly VIRGO = "Virgo";
+    public static readonly LIBRA = "Libra";
+    public static readonly SCORPIO = "Scorpio";
+    public static readonly SAGITTARIUS = "Sagittarius";
+    public static readonly CAPRICORNUS = "Capricornus";
+    public static readonly AQUARIUS = "Aquarius";
+    public static readonly PISCES = "Pisces";
 }
