@@ -114,3 +114,21 @@ describe("Is Pisces", () => {
         expect(findHoroscope["getZodiacByDate"](new Date('March 20, 1995 13:24:00'))).toEqual(Zodiac.PISCES);
     });
 });
+
+
+describe("Turkish Localization Test", () => {
+    test("Zodiac Turkish Localization Test", () => {
+        expect(findHoroscope["getZodiacByLang"](Zodiac.PISCES, 'tr')).toEqual('Balık');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.ARIES, 'tr')).toEqual('Koç');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.TAURUS, 'tr')).toEqual('Boğa');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.GEMINI, 'tr')).toEqual('İkizler');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.CANCER, 'tr')).toEqual('Yengeç');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.LEO, 'tr')).toEqual('Aslan');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.VIRGO, 'tr')).toEqual('Başak');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.LIBRA, 'tr')).toEqual('Terazi');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.SCORPIO, 'tr')).toEqual('Akrep');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.SAGITTARIUS, 'tr')).toEqual('Yay');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.CAPRICORNUS, 'tr')).toEqual('Oğlak');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.AQUARIUS, 'tr')).toEqual('Kova');
+    });
+});
