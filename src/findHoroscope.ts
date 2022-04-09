@@ -1,6 +1,10 @@
+import { ErrorMessages } from "./constants/ErrorMessages";
+import { LangCodes } from "./constants/LangCodes";
 import { Zodiac } from "./constants/Zodiac";
+import { Localization } from "./localization/Localization";
 
 export class FindHoroscope{
+    private localization:Localization = new Localization();
 
     public getZodiac(birthDate:Date, lang:string):string{
         const baseZodiac = this.getZodiacByDate(birthDate);
@@ -96,14 +100,15 @@ export class FindHoroscope{
                 }
             }
             default: { 
-                throw new Error("Invalid Date");
+                throw new Error(ErrorMessages.InvalidDate);
                 break; 
              }
         }
     }
 
-    private getZodiacByLang(zodiac:Zodiac, lang:string):string{
-        return "";
+    private getZodiacByLang(zodiac:string, lang:string):string{
+        const jsonObject = this.localization.getObjectByLang(lang);
+        return jsonObject[zodiac];
     }
 
 }
