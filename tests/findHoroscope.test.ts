@@ -132,3 +132,20 @@ describe("Turkish Localization Test", () => {
         expect(findHoroscope["getZodiacByLang"](Zodiac.AQUARIUS, 'tr')).toEqual('Kova');
     });
 });
+
+describe("Italian Localization Test", () => {
+    test("Zodiac Italian Localization Test", () => {
+        expect(findHoroscope["getZodiacByLang"](Zodiac.PISCES, 'it')).toEqual('Pesci');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.ARIES, 'it')).toEqual('Ariete');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.TAURUS, 'it')).toEqual('Toro');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.GEMINI, 'it')).toEqual('Gemelli');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.CANCER, 'it')).toEqual('Cancro');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.LEO, 'it')).toEqual('Leone');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.VIRGO, 'it')).toEqual('Vergine');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.LIBRA, 'it')).toEqual('Bilancia');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.SCORPIO, 'it')).toEqual('Scorpione');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.SAGITTARIUS, 'it')).toEqual('Sagittario');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.CAPRICORNUS, 'it')).toEqual('Capricorno');
+        expect(findHoroscope["getZodiacByLang"](Zodiac.AQUARIUS, 'it')).toEqual('Acquario');
+    });
+});
