@@ -167,3 +167,11 @@ describe("French Localization Test", () => {
         expect(findHoroscope["getZodiacByLang"](Zodiac.AQUARIUS, 'fr')).toEqual('Verseau');
     });
 });
+
+
+describe("Get Zodiac", () => {
+    test("Get Zodiac by Birth Date", () => {
+        expect(findHoroscope["getZodiac"](new Date('March 20, 1995 13:24:00'),'tr')).toEqual('Balık');
+        expect(findHoroscope["getZodiacByDate"](new Date('August 10, 1995 13:24:00'))).toEqual(Zodiac.LEO);
+    });
+});
