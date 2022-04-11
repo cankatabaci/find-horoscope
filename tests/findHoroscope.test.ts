@@ -1,5 +1,5 @@
 import {FindHoroscope} from '../src/findHoroscope';
-import { Zodiac } from '../src/constants/Zodiac';
+import { Zodiac,ChineseZodiac } from '../src/constants/Zodiac';
 const findHoroscope = new FindHoroscope();
 
 
@@ -173,5 +173,139 @@ describe("Get Zodiac", () => {
     test("Get Zodiac by Birth Date", () => {
         expect(findHoroscope["getZodiac"](new Date('March 20, 1995 13:24:00'),'tr')).toEqual('Balık');
         expect(findHoroscope["getZodiacByDate"](new Date('August 10, 1995 13:24:00'))).toEqual(Zodiac.LEO);
+    });
+});
+
+
+
+describe("Is Rat", () => {
+    test("Are the Rat compatible with the date?", () => {
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1948 13:24:00').getFullYear())).toEqual(ChineseZodiac.RAT);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1960 13:24:00').getFullYear())).toEqual(ChineseZodiac.RAT);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1972 13:24:00').getFullYear())).toEqual(ChineseZodiac.RAT);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1984 13:24:00').getFullYear())).toEqual(ChineseZodiac.RAT);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2020 13:24:00').getFullYear())).toEqual(ChineseZodiac.RAT);
+    });
+});
+
+
+describe("Is Ox", () => {
+    test("Are the Ox compatible with the date?", () => {
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1949 13:24:00').getFullYear())).toEqual(ChineseZodiac.OX);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1961 13:24:00').getFullYear())).toEqual(ChineseZodiac.OX);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1985 13:24:00').getFullYear())).toEqual(ChineseZodiac.OX);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1997 13:24:00').getFullYear())).toEqual(ChineseZodiac.OX);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2021 13:24:00').getFullYear())).toEqual(ChineseZodiac.OX);
+    });
+});
+
+
+describe("Is Tiger", () => {
+    test("Are the Tiger compatible with the date?", () => {
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1950 13:24:00').getFullYear())).toEqual(ChineseZodiac.TIGER);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1974 13:24:00').getFullYear())).toEqual(ChineseZodiac.TIGER);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1986 13:24:00').getFullYear())).toEqual(ChineseZodiac.TIGER);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1998 13:24:00').getFullYear())).toEqual(ChineseZodiac.TIGER);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2010 13:24:00').getFullYear())).toEqual(ChineseZodiac.TIGER);
+    });
+});
+
+
+describe("Is Rabbit", () => {
+    test("Are the Rabbit compatible with the date?", () => {
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1951 13:24:00').getFullYear())).toEqual(ChineseZodiac.RABBIT);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1963 13:24:00').getFullYear())).toEqual(ChineseZodiac.RABBIT);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1975 13:24:00').getFullYear())).toEqual(ChineseZodiac.RABBIT);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1999 13:24:00').getFullYear())).toEqual(ChineseZodiac.RABBIT);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2011 13:24:00').getFullYear())).toEqual(ChineseZodiac.RABBIT);
+    });
+});
+
+
+describe("Is Dragon", () => {
+    test("Are the Dragon compatible with the date?", () => {
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1952 13:24:00').getFullYear())).toEqual(ChineseZodiac.DRAGON);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1964 13:24:00').getFullYear())).toEqual(ChineseZodiac.DRAGON);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1988 13:24:00').getFullYear())).toEqual(ChineseZodiac.DRAGON);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2000 13:24:00').getFullYear())).toEqual(ChineseZodiac.DRAGON);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2012 13:24:00').getFullYear())).toEqual(ChineseZodiac.DRAGON);
+    });
+});
+
+describe("Is Snake", () => {
+    test("Are the Snake compatible with the date?", () => {
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1953 13:24:00').getFullYear())).toEqual(ChineseZodiac.SNAKE);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1965 13:24:00').getFullYear())).toEqual(ChineseZodiac.SNAKE);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1977 13:24:00').getFullYear())).toEqual(ChineseZodiac.SNAKE);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1989 13:24:00').getFullYear())).toEqual(ChineseZodiac.SNAKE);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2001 13:24:00').getFullYear())).toEqual(ChineseZodiac.SNAKE);
+    });
+});
+
+
+describe("Is Horse", () => {
+    test("Are the Horse compatible with the date?", () => {
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1954 13:24:00').getFullYear())).toEqual(ChineseZodiac.HORSE);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1966 13:24:00').getFullYear())).toEqual(ChineseZodiac.HORSE);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1978 13:24:00').getFullYear())).toEqual(ChineseZodiac.HORSE);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2002 13:24:00').getFullYear())).toEqual(ChineseZodiac.HORSE);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2026 13:24:00').getFullYear())).toEqual(ChineseZodiac.HORSE);
+    });
+});
+
+
+
+describe("Is Goat", () => {
+    test("Are the Goat compatible with the date?", () => {
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1955 13:24:00').getFullYear())).toEqual(ChineseZodiac.GOAT);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1967 13:24:00').getFullYear())).toEqual(ChineseZodiac.GOAT);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1979 13:24:00').getFullYear())).toEqual(ChineseZodiac.GOAT);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2003 13:24:00').getFullYear())).toEqual(ChineseZodiac.GOAT);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2015 13:24:00').getFullYear())).toEqual(ChineseZodiac.GOAT);
+    });
+});
+
+
+describe("Is Monkey", () => {
+    test("Are the Monkey compatible with the date?", () => {
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1956 13:24:00').getFullYear())).toEqual(ChineseZodiac.MONKEY);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1968 13:24:00').getFullYear())).toEqual(ChineseZodiac.MONKEY);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1992 13:24:00').getFullYear())).toEqual(ChineseZodiac.MONKEY);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2004 13:24:00').getFullYear())).toEqual(ChineseZodiac.MONKEY);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2016 13:24:00').getFullYear())).toEqual(ChineseZodiac.MONKEY);
+    });
+});
+
+
+describe("Is Rooster", () => {
+    test("Are the Rooster compatible with the date?", () => {
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1957 13:24:00').getFullYear())).toEqual(ChineseZodiac.ROOSTER);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1969 13:24:00').getFullYear())).toEqual(ChineseZodiac.ROOSTER);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1981 13:24:00').getFullYear())).toEqual(ChineseZodiac.ROOSTER);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1993 13:24:00').getFullYear())).toEqual(ChineseZodiac.ROOSTER);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2005 13:24:00').getFullYear())).toEqual(ChineseZodiac.ROOSTER);
+    });
+});
+
+
+describe("Is Dog", () => {
+    test("Are the Dog compatible with the date?", () => {
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1958 13:24:00').getFullYear())).toEqual(ChineseZodiac.DOG);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1970 13:24:00').getFullYear())).toEqual(ChineseZodiac.DOG);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1982 13:24:00').getFullYear())).toEqual(ChineseZodiac.DOG);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1994 13:24:00').getFullYear())).toEqual(ChineseZodiac.DOG);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2018 13:24:00').getFullYear())).toEqual(ChineseZodiac.DOG);
+    });
+});
+
+
+
+describe("Is Pig", () => {
+    test("Are the Pig compatible with the date?", () => {
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1959 13:24:00').getFullYear())).toEqual(ChineseZodiac.PIG);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1971 13:24:00').getFullYear())).toEqual(ChineseZodiac.PIG);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1983 13:24:00').getFullYear())).toEqual(ChineseZodiac.PIG);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1995 13:24:00').getFullYear())).toEqual(ChineseZodiac.PIG);
+        expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2007 13:24:00').getFullYear())).toEqual(ChineseZodiac.PIG);
     });
 });
