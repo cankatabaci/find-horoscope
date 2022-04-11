@@ -12,3 +12,33 @@ export class Zodiac{
     public static readonly AQUARIUS = "Aquarius";
     public static readonly PISCES = "Pisces";
 }
+
+export class ChineseZodiac{
+    public static readonly MONKEY = "Monkey";
+    public static readonly ROOSTER = "Rooster";
+    public static readonly DOG = "Dog";
+    public static readonly PIG = "Pig";
+    public static readonly RAT = "Rat";
+    public static readonly OX = "Ox";
+    public static readonly TIGER = "Tiger";
+    public static readonly RABBIT = "Rabbit";
+    public static readonly DRAGON = "Dragon";
+    public static readonly SNAKE = "Snake";
+    public static readonly HORSE = "Horse";
+    public static readonly GOAT = "Goat";
+
+    public static readonly chineseZodiac =  [
+        ChineseZodiac.MONKEY,
+        ChineseZodiac.ROOSTER,
+        ChineseZodiac.DOG,
+        ChineseZodiac.PIG,
+        ChineseZodiac.RAT,
+        ChineseZodiac.OX,
+        ChineseZodiac.TIGER,
+        ChineseZodiac.RABBIT,
+        ChineseZodiac.DRAGON,
+        ChineseZodiac.SNAKE,
+        ChineseZodiac.HORSE,
+        ChineseZodiac.GOAT
+    ] as const;
+}

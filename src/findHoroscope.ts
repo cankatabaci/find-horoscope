@@ -1,6 +1,6 @@
 import { ErrorMessages } from "./constants/ErrorMessages";
 import { LangCodes } from "./constants/LangCodes";
-import { Zodiac } from "./constants/Zodiac";
+import { ChineseZodiac, Zodiac } from "./constants/Zodiac";
 import { Localization } from "./localization/Localization";
 
 export class FindHoroscope{
@@ -11,6 +11,21 @@ export class FindHoroscope{
         const finalZodiac = this.getZodiacByLang(baseZodiac, lang);
 
         return finalZodiac;
+    }
+
+    public getChineseZodiac(birthDate:Date, lang:string):string{
+        const baseChineseZodiac = this.getChineseZodiacByYear(birthDate.getFullYear());
+        const finalChineseZodiac = this.getChineseZodiacByLang(baseChineseZodiac, lang);
+
+        return finalChineseZodiac;
+    }
+
+    private getChineseZodiacByYear(year:number):string{
+        return ChineseZodiac.chineseZodiac[year % 12];
+    }
+
+    private getChineseZodiacByLang(zodiac:string, lang:string):string{
+        return zodiac;
     }
 
     private getZodiacByDate(birthDate:Date):string{
