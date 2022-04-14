@@ -25,7 +25,8 @@ export class FindHoroscope{
     }
 
     private getChineseZodiacByLang(zodiac:string, lang:string):string{
-        return zodiac;
+        const jsonObject = this.localization.getObjectByLang(lang);
+        return jsonObject.chineseZodiac[zodiac];
     }
 
     private getZodiacByDate(birthDate:Date):string{
@@ -123,7 +124,7 @@ export class FindHoroscope{
 
     private getZodiacByLang(zodiac:string, lang:string):string{
         const jsonObject = this.localization.getObjectByLang(lang);
-        return jsonObject[zodiac];
+        return jsonObject.zodiac[zodiac];
     }
 
 }
