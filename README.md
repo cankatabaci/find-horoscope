@@ -1,5 +1,4 @@
 [![Node.js CI](https://github.com/cankatabaci/find-horoscope/actions/workflows/node.js.yml/badge.svg)](https://github.com/cankatabaci/find-horoscope/actions/workflows/node.js.yml)
-
 [![Publish Package to npmjs](https://github.com/cankatabaci/find-horoscope/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/cankatabaci/find-horoscope/actions/workflows/npm-publish.yml)
 
 _Gives your horoscope and chinese horoscope based on your date of birth. Also has multi-language support_

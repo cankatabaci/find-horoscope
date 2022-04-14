@@ -1,6 +1,6 @@
 {
     "name": "find-horoscope",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Find your zodiac sign by date of birth",
     "main": "dist/main.js",
     "types": "dist/main.d.ts",
@@ -17,7 +17,8 @@
         "zodiac sign",
         "find-horoscope",
         "astrology",
-        "rising sign"
+        "rising sign",
+        "chinese-zodiac"
     ],
     "homepage": "https://github.com/cankatabaci/find-horoscope",
     "repository": {
