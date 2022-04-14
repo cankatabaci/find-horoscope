@@ -1,4 +1,5 @@
 {
+    "zodiac":{
     "Aries":"Ariete",
     "Taurus":"Toro",
     "Gemini":"Gemelli",
@@ -11,4 +12,19 @@
     "Capricornus":"Capricorno",
     "Aquarius":"Acquario",
     "Pisces":"Pesci"
+    },
+    "chineseZodiac":{
+        "Monkey":"scimmia",
+        "Rooster":"gallo",
+        "Dog":"cane",
+        "Pig":"maiale",
+        "Rat":"ratto",
+        "Ox":"bue",
+        "Tiger":"tigre",
+        "Rabbit":"coniglio",
+        "Dragon":"drago",
+        "Snake":"serpente",
+        "Horse":"cavallo",
+        "Goat":"capra"
+    }
 }

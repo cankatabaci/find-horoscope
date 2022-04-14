@@ -1,14 +1,31 @@
 {
-    "Aries":"Koç",
-    "Taurus":"Boğa",
-    "Gemini":"İkizler",
-    "Cancer":"Yengeç",
-    "Leo":"Aslan",
-    "Virgo":"Başak",
-    "Libra":"Terazi",
-    "Scorpio":"Akrep",
-    "Sagittarius":"Yay",
-    "Capricornus":"Oğlak",
-    "Aquarius":"Kova",
-    "Pisces":"Balık"
+    "zodiac":{
+        "Aries":"Koç",
+        "Taurus":"Boğa",
+        "Gemini":"İkizler",
+        "Cancer":"Yengeç",
+        "Leo":"Aslan",
+        "Virgo":"Başak",
+        "Libra":"Terazi",
+        "Scorpio":"Akrep",
+        "Sagittarius":"Yay",
+        "Capricornus":"Oğlak",
+        "Aquarius":"Kova",
+        "Pisces":"Balık"
+    },
+    "chineseZodiac":{
+        "Monkey":"Maymun",
+        "Rooster":"Horoz",
+        "Dog":"Köpek",
+        "Pig":"Domuz",
+        "Rat":"Fare",
+        "Ox":"Öküz",
+        "Tiger":"Kaplan",
+        "Rabbit":"Tavşan",
+        "Dragon":"Ejderha",
+        "Snake":"Yılan",
+        "Horse":"At",
+        "Goat":"Keçi"
+    }
+
 }
