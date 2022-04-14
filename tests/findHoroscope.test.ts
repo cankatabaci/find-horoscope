@@ -1,7 +1,9 @@
 import {FindHoroscope} from '../src/findHoroscope';
 import { Zodiac,ChineseZodiac } from '../src/constants/Zodiac';
+import { Localization } from '../src/localization/Localization';
+import { ErrorMessages } from '../src/constants/ErrorMessages';
 const findHoroscope = new FindHoroscope();
-
+const localization = new Localization();
 
 describe("Is Aries", () => {
     test("Are the Aries compatible with the date?", () => {
@@ -307,5 +309,41 @@ describe("Is Pig", () => {
         expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1983 13:24:00').getFullYear())).toEqual(ChineseZodiac.PIG);
         expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 1995 13:24:00').getFullYear())).toEqual(ChineseZodiac.PIG);
         expect(findHoroscope["getChineseZodiacByYear"](new Date('January 21, 2007 13:24:00').getFullYear())).toEqual(ChineseZodiac.PIG);
+    });
+});
+
+
+describe("French Localization Test", () => {
+    test("Chinese Zodiac French Localization Test", () => {
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.DOG, 'fr')).toEqual('Chien');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.DRAGON, 'fr')).toEqual('Dragon');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.GOAT, 'fr')).toEqual('Bouc');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.HORSE, 'fr')).toEqual('Cheval');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.MONKEY, 'fr')).toEqual('Singe');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.OX, 'fr')).toEqual('Boeuf');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.PIG, 'fr')).toEqual('Cochon');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.RABBIT, 'fr')).toEqual('Lapin');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.RAT, 'fr')).toEqual('Rat');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.ROOSTER, 'fr')).toEqual('Coq');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.SNAKE, 'fr')).toEqual('Serpent');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.TIGER, 'fr')).toEqual('Tigre');
+    });
+});
+
+
+describe("Turkish Localization Test", () => {
+    test("Chinese Zodiac Turkish Localization Test", () => {
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.DOG, 'tr')).toEqual('Köpek');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.DRAGON, 'tr')).toEqual('Ejderha');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.GOAT, 'tr')).toEqual('Keçi');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.HORSE, 'tr')).toEqual('At');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.MONKEY, 'tr')).toEqual('Maymun');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.OX, 'tr')).toEqual('Öküz');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.PIG, 'tr')).toEqual('Domuz');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.RABBIT, 'tr')).toEqual('Tavşan');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.RAT, 'tr')).toEqual('Fare');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.ROOSTER, 'tr')).toEqual('Horoz');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.SNAKE, 'tr')).toEqual('Yılan');
+        expect(findHoroscope["getChineseZodiacByLang"](ChineseZodiac.TIGER, 'tr')).toEqual('Kaplan');
     });
 });
