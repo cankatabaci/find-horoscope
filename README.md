@@ -30,7 +30,7 @@ Supported Lang Codes:
 
 | LangCode      | Description |
 | ----------- | ----------- |
-| tr      | Turkish       |
+| tr     | Turkish       |
 | en   | English        |
 | it   | Italian        |
 | fr   | French        |
